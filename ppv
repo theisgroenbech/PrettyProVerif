@@ -1,0 +1,3 @@
+#!/bin/bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+proverif $1 | java -cp $DIR PrettyProVerif
