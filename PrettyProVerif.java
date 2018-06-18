@@ -102,12 +102,16 @@ public class PrettyProVerif {
         Scanner scanner = new Scanner(s);
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            if(line.startsWith("RESULT")) sb.append(line+"\n");
+            if(line.startsWith("RESULT")) sb.append(cleanLine(line)).append("\n");
         }
         scanner.close();
 
 
         return sb.toString();
+    }
+
+    static String cleanLine(String s){
+        return s.replaceAll("\\[([^]]+)\\]","[..]");
     }
 
 
