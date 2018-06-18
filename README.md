@@ -8,8 +8,8 @@ event(startInitiator(U_2165,V_2166,S_U_2167)) to event(startInitiator(U_1,V_1,S_
 
 It is based on Java 9, but might run in other versions.
 
-##Running
+## Running
 
-If you want to try it, copy the files to your ProVerif directory and run chmod +x ppv.
+Copy the files to your ProVerif directory and run chmod +x ppv.
 
 Then use ppv instead of proverif when running.
